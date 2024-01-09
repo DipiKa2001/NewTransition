@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container1{
+            height: 500px;
+            width: 600px;
+            border: 2px solid black;
+            --dark-pink:#f40a92;
+            background-color: var(--dark-pink);
+
+            
+        }
+        .box1{
+            height: 90px;
+            width: 90px;
+            margin: 60px;
+            border: 9px solid black;
+            --dark-sky:#4e4b4b;
+            background-color: var(--dark-sky);
+            transition: transform 2s ease;
+        }
+        .box1:hover{
+            width: 400px;
+
+            background-color: darkblue;
+            transform: rotate(0deg);
+        }
+
+
+        .container2{
+            height: 500px;
+            width: 600px;
+            border: 2px solid black;
+            --dark-pink:#f40a92;
+            background-color: var(--dark-pink);
+
+            
+        }
+        .box2{
+            height: 90px;
+            width: 90px;
+            margin: 60px;
+            border: 9px solid black;
+            --dark-sky:#4e4b4b;
+            background-color: var(--dark-sky);
+
+            transition: transform 2s ease-in;
+        }
+        .box2:hover{
+            width: 400px;
+
+            background-color: darkblue;
+            transform: translateX(500px);
+        }
+
+        .container3{
+            height: 500px;
+            width: 600px;
+            border: 2px solid black;
+            --dark-pink:#f40a92;
+            background-color: var(--dark-pink);
+
+            
+        }
+        .box3{
+            height: 90px;
+            width: 90px;
+            margin: 60px;
+            border: 9px solid black;
+            --dark-sky:#4e4b4b;
+            background-color: var(--dark-sky);
+            transition: transform 2s ease-in-out;
+        }
+        .box3:hover{
+            width: 400px;
+
+            background-color: darkblue;
+           transform: translateY(500px);
+        }
+
+
+
+        .container4{
+            height: 500px;
+            width: 600px;
+            border: 2px solid black;
+            --dark-pink:#f40a92;
+            background-color: var(--dark-pink);
+
+            
+        }
+        .box4{
+            height: 90px;
+            width: 90px;
+            margin: 60px;
+            border: 9px solid black;
+            --dark-sky:#4e4b4b;
+            background-color: var(--dark-sky);
+
+            transition: transform 2s cubic-bezier(1,-0.09,0,1.68);
+        }
+        .box4:hover{
+            width: 400px;
+
+            background-color: darkblue;
+            transform: translateX(45px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box1"></div>
+    </div>
+
+    <br><br>
+    <div class="container2">
+        <div class="box2"></div>
+    </div>
+    <br><br>
+
+    <div class="container3">
+        <div class="box2"></div>
+    </div>
+    <br><br>
+
+
+    <div class="container4">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
